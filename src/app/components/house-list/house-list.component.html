@@ -1,0 +1,14 @@
+<div class="row">
+    @for (item of listadoCasas; track item.id) {
+        <div class="card" style="width: 18rem;">
+            <img [src]="item.photo" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.city}}</p>
+              <i class="bi bi-wifi">{{item.wifi == true? "ON" : "OFF"}}</i>
+              <br>
+              <a href="tel 9020222122" class="btn btn-primary">Call</a>
+            </div>
+          </div>
+    }
+</div>
